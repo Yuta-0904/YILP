@@ -14,6 +14,9 @@
   border-radius: 10px;
   width: 60%;
   margin: 0 auto 30px;
+  @include mobile {
+    width: 100%;
+  }
   .contens__inner {
     padding: 20px 25px;
     .contens__box-item {
@@ -65,6 +68,12 @@
 .contents__text {
   font-size: 1.333vw;
   margin-bottom: 5.926vw;
+
+  @include mobile {
+    font-size: 16px;
+    line-height: 2;
+    margin-bottom: 20px;
+  }
 }
 
 .contents__point {
@@ -79,19 +88,21 @@
     text-align: center;
     font-size: 36px;
     font-weight: bold;
-    .contents__price-bikou {
-      font-size: 20px;
-      position: relative;
-      top: -20px;
+    @include mobile {
+      font-size: 24px;
     }
   }
 }
 
-.contents__last {
-  font-size: 2.519vw;
+.contents__price-bikou {
+  font-size: 20px;
+  position: relative;
+  top: -20px;
 }
 
-.bikou {
-  font-size: 0.737vw;
-  text-align: right;
+.contents__last {
+  font-size: 2.519vw;
+  @include mobile {
+    font-size: 20px;
+  }
 }

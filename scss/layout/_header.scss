@@ -6,11 +6,18 @@ header {
   z-index: 999;
   height: 6.296vw;
   line-height: 6.296vw;
+  @include mobile {
+    height: 65px;
+    line-height: 65px;
+  }
 }
 
 .bigcontents {
   max-width: 96.296vw;
   margin: 0 auto;
+  @include mobile {
+    width: 90%;
+  }
 }
 
 .header-logo {
@@ -24,9 +31,64 @@ header {
   text-decoration: none;
 }
 
-.header-nav__wrap {
+//ハンバーガーメニューの対応
+#global-nav {
   width: 80%;
+  @include mobile {
+    background: #fff;
+    color: #d32c25;
+    position: fixed;
+    max-width: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 990;
+    text-align: center;
+    display: flex;
+    visibility: hidden;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.6s ease, visibility 0.6s ease;
+  }
 }
+
+#nav-toggle {
+  @include mobile {
+    position: absolute;
+    top: 22px;
+    right: 5%;
+    height: 18px;
+    cursor: pointer;
+    z-index: 1000;
+    div {
+      position: relative;
+      width: 24px;
+      span {
+        width: 100%;
+        height: 2px;
+        left: 0;
+        display: block;
+        background: #111210;
+        position: absolute;
+        transition: transform 0.6s ease-in-out, top 0.5s ease;
+        &:nth-child(1) {
+          top: 0;
+        }
+        &:nth-child(2) {
+          top: 9px;
+        }
+        &:nth-child(3) {
+          top: 18px;
+        }
+      }
+    }
+  }
+}
+
 .header-nav__list {
   margin: 0 1.111vw;
   padding: 1.481vw 0 0;

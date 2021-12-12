@@ -9,6 +9,10 @@
   font-size: 1.037vw;
   margin-bottom: 3.704vw;
   color: #666666;
+  @include mobile {
+    font-size: 14px;
+    margin-bottom: 45px;
+  }
 }
 
 .center {
@@ -16,8 +20,22 @@
   margin: 0 auto;
 }
 
+.m-top30 {
+  margin-top: 30px;
+}
+
 .sp {
   display: none;
+  @include mobile {
+    display: block;
+  }
+}
+
+.pc {
+  display: block;
+  @include mobile {
+    display: none;
+  }
 }
 
 .flex {
@@ -39,11 +57,19 @@
 
 .preparation__img {
   width: 38.519vw;
+
+  @include mobile {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 
 .max-width {
-  max-width: 80vw;
+  max-width: 1080px;
   margin: 0 auto;
+  @include mobile {
+    width: 90%;
+  }
 }
 
 .btn {
@@ -72,6 +98,11 @@
   font-size: 3.556vw;
   margin-bottom: 0.519vw;
   line-height: 1;
+
+  @include mobile {
+    font-size: 40px;
+    margin-bottom: 3px;
+  }
 }
 
 .blue {
@@ -80,8 +111,37 @@
 
 .separation {
   padding: 5.926vw 0;
+
+  @include mobile {
+    padding: 50px 0;
+  }
 }
 
 .w50 {
   width: 50%;
+}
+
+.bikou {
+  font-size: 0.737vw;
+  text-align: right;
+
+  @include mobile {
+    font-size: 14px;
+    text-align: right;
+    font-weight: bold;
+  }
+}
+
+.comparison-scroll {
+  @include mobile {
+    width: 100%;
+    height: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    img {
+      width: 1000px;
+      max-width: 1000px;
+      height: 570px;
+    }
+  }
 }

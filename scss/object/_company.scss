@@ -9,6 +9,9 @@
   text-align: left;
   border: 1px solid #203744;
   line-height: 2;
+  @include mobile {
+    padding: 10px 2.5%;
+  }
 }
 
 .company-table__wrap th {

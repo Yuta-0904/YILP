@@ -1,34 +1,69 @@
 main {
   padding-top: 6.296vw;
+  @include mobile {
+    padding-top: 65px;
+  }
 }
 
-.top {
-  display: flex;
-  align-items: center;
-  background-image: url("../../images/kv-img01.jpg");
-  background-size: cover;
-  background-position: center;
-  min-height: 680px;
-  padding-left: 70px;
+.po-re {
+  position: relative;
+
+  @include mobile {
+    background: #e5f1fd;
+    padding-top: 150px;
+  }
 }
 
-.top__desc-text {
+.kv-text__box {
+  width: 40vw;
+  height: 25vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 5vw;
+  margin: auto;
+  text-align: center;
+
+  @include mobile {
+    width: 90vw;
+    position: absolute;
+    top: 5vw;
+    bottom: 0;
+    height: auto;
+    left: 5vw;
+  }
+}
+
+.kv-catch {
+  font-size: 1.053vw;
+  margin-bottom: 1.053vw;
+  font-weight: bold;
+
+  @include mobile {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+}
+
+.kv-catch2 {
   font-size: 1.737vw;
   margin-bottom: 0.263vw;
   line-height: 1;
   font-weight: bold;
+  @include mobile {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
 }
-
-.top__desc-sub-text {
-  font-size: 1.053vw;
-  margin-bottom: 1.053vw;
-  font-weight: bold;
-}
-
-.top__desc-title {
+.kv-title {
   font-size: 1.684vw;
   letter-spacing: 0.1em;
   margin-bottom: 1.053vw;
+
+  @include mobile {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
 }
 
 .kome {
@@ -44,32 +79,47 @@ main {
   }
 }
 
-.top-bigtext {
-  font-size: 1.737vw;
-}
-
-.top-bignum {
+.kv-bignum {
   font-size: 5.263vw;
+  @include mobile {
+    font-size: 50px;
+  }
 }
 
-.tpo {
-  width: 40vw;
-  height: 25vw;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 5vw;
-  margin: auto;
-  text-align: center;
+.kv-point__circle {
+  background: #466386;
+  border-radius: 50%;
+  margin: 0 0.526vw;
+  width: 6.316vw;
+  height: 6.316vw;
+
+  @include mobile {
+    margin: 0 5px;
+    width: 100px;
+    height: 100px;
+  }
 }
 
-.kv-text__box {
-  width: 40vw;
-  height: 25vw;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 5vw;
-  margin: auto;
-  text-align: center;
+.kv-point__text {
+  font-size: 1.053vw;
+  padding-top: 1.579vw;
+  line-height: 1.7;
+  color: #fff;
+  @include mobile {
+    font-size: 14px;
+    padding-top: 30px;
+  }
+}
+
+.kv-bigtext {
+  font-size: 1.737vw;
+  @include mobile {
+    font-size: 30px;
+  }
+}
+
+.sp-none {
+  @include mobile {
+    display: none;
+  }
 }

@@ -1,5 +1,9 @@
 .faq-list__inner {
   margin-bottom: 1.481vw;
+
+  @include mobile {
+    margin-bottom: 20px;
+  }
 }
 
 .faq-list__qbox {
@@ -16,6 +20,11 @@
   padding: 1.481vw 1.481vw 1.481vw 5.185vw;
   font-size: 1.185vw;
   position: relative;
+  @include mobile {
+    padding: 10px 10px 10px 45px;
+    font-size: 15px;
+    position: relative;
+  }
   &::before {
     content: "Q";
     left: 2.222vw;
@@ -30,6 +39,11 @@
   padding: 1.481vw 1.481vw 1.481vw 5.185vw;
   font-size: 1.185vw;
   position: relative;
+  @include mobile {
+    padding: 10px 10px 10px 45px;
+    font-size: 15px;
+    position: relative;
+  }
   &::before {
     content: "A";
     left: 2.222vw;
