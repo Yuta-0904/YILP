@@ -1,0 +1,87 @@
+.bold {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "Segoe UI semibold",
+    "Helvetica Neue", HelveticaNeue, YuGothic, "Yu Gothic", "Segoe UI", Verdana,
+    Meiryo, sans-serif;
+  font-weight: bold;
+}
+
+.common-title {
+  font-size: 1.037vw;
+  margin-bottom: 3.704vw;
+  color: #666666;
+}
+
+.center {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.sp {
+  display: none;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.-jcsb {
+  justify-content: space-between;
+}
+
+.-jcc {
+  justify-content: center;
+}
+
+.-aic {
+  align-items: center;
+}
+
+.preparation__img {
+  width: 38.519vw;
+}
+
+.max-width {
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+.btn {
+  border-radius: 5.926vw;
+  margin: 0 0.741vw;
+  width: 24.296vw;
+  height: 6.148vw;
+  line-height: 6.148vw;
+  text-align: center;
+}
+
+.btn-link {
+  border-radius: 80px;
+  display: block;
+  font-size: 1.704vw;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease-out;
+}
+
+.karla {
+  font-family: "Karla", sans-serif;
+}
+
+.en-title {
+  font-size: 3.556vw;
+  margin-bottom: 0.519vw;
+  line-height: 1;
+}
+
+.blue {
+  color: #203744;
+}
+
+.separation {
+  padding: 5.926vw 0;
+}
+
+.w50 {
+  width: 50%;
+}

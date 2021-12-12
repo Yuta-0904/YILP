@@ -1,0 +1,23 @@
+.company-table__wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.company-table__wrap th,
+.company-table__wrap td {
+  padding: 10px 5%;
+  text-align: left;
+  border: 1px solid #203744;
+  line-height: 2;
+}
+
+.company-table__wrap th {
+  width: 25%;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.company-table__wrap td {
+  width: 65%;
+  font-size: 15px;
+}

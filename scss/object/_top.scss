@@ -1,0 +1,75 @@
+main {
+  padding-top: 6.296vw;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  background-image: url("../../images/kv-img01.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 680px;
+  padding-left: 70px;
+}
+
+.top__desc-text {
+  font-size: 1.737vw;
+  margin-bottom: 0.263vw;
+  line-height: 1;
+  font-weight: bold;
+}
+
+.top__desc-sub-text {
+  font-size: 1.053vw;
+  margin-bottom: 1.053vw;
+  font-weight: bold;
+}
+
+.top__desc-title {
+  font-size: 1.684vw;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.053vw;
+}
+
+.kome {
+  position: relative;
+  padding-right: 0.526vw;
+
+  &::after {
+    content: "*";
+    font-size: 2.105vw;
+    position: absolute;
+    top: 0;
+    right: -0.263vw;
+  }
+}
+
+.top-bigtext {
+  font-size: 1.737vw;
+}
+
+.top-bignum {
+  font-size: 5.263vw;
+}
+
+.tpo {
+  width: 40vw;
+  height: 25vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 5vw;
+  margin: auto;
+  text-align: center;
+}
+
+.kv-text__box {
+  width: 40vw;
+  height: 25vw;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 5vw;
+  margin: auto;
+  text-align: center;
+}

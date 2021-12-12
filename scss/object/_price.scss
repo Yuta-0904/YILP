@@ -1,0 +1,136 @@
+.price {
+  background: linear-gradient(90deg, #e3eeff, #f3e7e9);
+}
+
+.price-box__wrap {
+  width: 47%;
+  background: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.18);
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.price-box__inner {
+  padding: 20px;
+}
+
+.plus {
+  font-size: 60px;
+  color: #fff;
+  font-weight: 900;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.18);
+}
+
+.price-table__wrap {
+  width: 100%;
+  margin: 0px auto 50px;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.18);
+}
+
+.price-box__title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.price-box__catch {
+  font-size: 14px;
+}
+
+.price-box__price {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.price-box__pricesmall {
+  font-size: 20px;
+}
+
+.price-box__bikou {
+  font-size: 14px;
+  color: #666;
+}
+
+.price-table__wrap {
+  width: 100%;
+  margin: 0px auto 50px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.18);
+}
+
+.price-table__thtitle,
+.price-table__tdtitle,
+.price-table__tditem {
+  padding: 15px 0;
+  font-size: 15px;
+  text-align: center;
+  border-bottom: 1px solid #666;
+}
+
+.kome.small {
+  position: relative;
+  padding-right: 0;
+  &::after {
+    content: "*";
+    font-size: 0.737vw;
+    position: absolute;
+    top: 0;
+    right: -0.368vw;
+  }
+}
+
+.price-table__thtitle.focus {
+  background: #203744;
+  color: #fff;
+}
+
+.price-table__tdtitle {
+  border-right: 1px solid #666;
+  background: #fff;
+  font-weight: 500;
+}
+
+.price-table__tditem.focus.text {
+  font-size: 16px;
+}
+
+.price-table__thtitle {
+  color: #203744;
+  background: #fafafa;
+}
+
+.price-rei__box {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.18);
+  background: #fff;
+  width: 100%;
+  margin: 20px auto;
+  padding: 30px 0;
+  border-radius: 20px;
+}
+
+.price-rei__catch {
+  margin-bottom: 20px;
+  color: #466386;
+}
+
+.price-rei__inner {
+  width: 48%;
+  &:first-child {
+    border-right: 1px solid #666;
+  }
+}
+
+.price-rei__title {
+  margin-bottom: 10px;
+}
+
+.price-rei__text {
+  font-size: 13px;
+}
+
+.price-rei__price {
+  font-size: 30px;
+}
+
+.price-small__text {
+  font-size: 12px;
+}
