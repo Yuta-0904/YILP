@@ -46,7 +46,7 @@
 .demo-btn {
   text-align: center;
   margin: 10px auto 10px;
-  background: #203744;
+  background: cl(navy);
   width: 60%;
   height: 40px;
   line-height: 40px;
@@ -54,7 +54,7 @@
 }
 
 .demo-btn__link {
-  color: #fff;
+  color: cl(white);
   font-size: 16px;
   text-align: center;
   display: block;

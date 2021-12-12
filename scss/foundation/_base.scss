@@ -6,12 +6,14 @@ $colors: (
   white: #fff,
   black: #000,
   text: #333333,
-  grey: #6e6e6e,
-  lightgrey: #f2f2f2,
+  grey: #666666,
+  lightgrey: #666,
   red: #ff0000,
   primary: #4d0000,
   gold: #b8860bea,
   baige: #ffffdd,
+  navy: #203744,
+  lightblue: #466386,
 );
 
 @function cl($key) {

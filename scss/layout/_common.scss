@@ -8,7 +8,7 @@
 .common-title {
   font-size: 1.037vw;
   margin-bottom: 3.704vw;
-  color: #666666;
+  color: cl(gray);
   @include mobile {
     font-size: 14px;
     margin-bottom: 45px;
@@ -86,7 +86,7 @@
   display: block;
   font-size: 1.704vw;
   text-decoration: none;
-  color: #fff;
+  color: cl(white);
   transition: all 0.3s ease-out;
 }
 
@@ -106,7 +106,7 @@
 }
 
 .blue {
-  color: #203744;
+  color: cl(navy);
 }
 
 .separation {

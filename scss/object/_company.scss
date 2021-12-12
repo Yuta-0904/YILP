@@ -7,7 +7,7 @@
 .company-table__wrap td {
   padding: 10px 5%;
   text-align: left;
-  border: 1px solid #203744;
+  border: 1px solid cl(navy);
   line-height: 2;
   @include mobile {
     padding: 10px 2.5%;

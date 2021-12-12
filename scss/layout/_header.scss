@@ -24,7 +24,7 @@ header {
   font-size: 2.341vw;
   width: 3%;
   font-weight: bold;
-  color: #203744;
+  color: cl(navy);
   min-width: 200px;
   margin-right: 2%;
 
@@ -35,7 +35,7 @@ header {
 #global-nav {
   width: 80%;
   @include mobile {
-    background: #fff;
+    background: cl(white);
     color: #d32c25;
     position: fixed;
     max-width: 100%;
@@ -149,7 +149,7 @@ header {
   font-size: 1.037vw;
   display: block;
   font-weight: bold;
-  color: #203744;
+  color: cl(navy);
 }
 
 .nav-btn {
