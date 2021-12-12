@@ -77,32 +77,34 @@ header {
 }
 
 .toggle {
-  width: 100%;
-  height: 2px;
-  left: 0;
-  display: block;
-  background: #111210;
-  position: absolute;
-  transition: transform 0.6s ease-in-out, top 0.5s ease;
-  &:nth-child(1) {
-    top: 0;
-    .open {
-      transform: rotate(45deg);
+  @include mobile {
+    width: 100%;
+    height: 2px;
+    left: 0;
+    display: block;
+    background: #111210;
+    position: absolute;
+    transition: transform 0.6s ease-in-out, top 0.5s ease;
+    &:nth-child(1) {
+      top: 0;
+      .open {
+        transform: rotate(45deg);
+      }
     }
-  }
-  &:nth-child(2) {
-    top: 9px;
-    .open {
+    &:nth-child(2) {
       top: 9px;
-      width: 0;
-      left: 50%;
+      .open {
+        top: 9px;
+        width: 0;
+        left: 50%;
+      }
     }
-  }
-  &:nth-child(3) {
-    top: 18px;
-    .open {
-      top: 9px;
-      transform: rotate(-45deg);
+    &:nth-child(3) {
+      top: 18px;
+      .open {
+        top: 9px;
+        transform: rotate(-45deg);
+      }
     }
   }
 }
