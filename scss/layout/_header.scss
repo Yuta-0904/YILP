@@ -53,6 +53,11 @@ header {
     align-items: center;
     opacity: 0;
     transition: opacity 0.6s ease, visibility 0.6s ease;
+    li {
+      opacity: 1;
+      transform: translateX(0);
+      transition: transform 1s ease, opacity 0.9s ease;
+    }
   }
 }
 
@@ -67,25 +72,54 @@ header {
     div {
       position: relative;
       width: 24px;
-      span {
-        width: 100%;
-        height: 2px;
-        left: 0;
-        display: block;
-        background: #111210;
-        position: absolute;
-        transition: transform 0.6s ease-in-out, top 0.5s ease;
-        &:nth-child(1) {
-          top: 0;
-        }
-        &:nth-child(2) {
-          top: 9px;
-        }
-        &:nth-child(3) {
-          top: 18px;
-        }
-      }
     }
+  }
+}
+
+.toggle {
+  width: 100%;
+  height: 2px;
+  left: 0;
+  display: block;
+  background: #111210;
+  position: absolute;
+  transition: transform 0.6s ease-in-out, top 0.5s ease;
+  &:nth-child(1) {
+    top: 0;
+    .open {
+      transform: rotate(45deg);
+    }
+  }
+  &:nth-child(2) {
+    top: 9px;
+    .open {
+      top: 9px;
+      width: 0;
+      left: 50%;
+    }
+  }
+  &:nth-child(3) {
+    top: 18px;
+    .open {
+      top: 9px;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.toggle.open {
+  &:nth-child(1) {
+    top: 9px;
+    transform: rotate(45deg);
+  }
+  &:nth-child(2) {
+    top: 9px;
+    width: 0;
+    left: 50%;
+  }
+  &:nth-child(3) {
+    top: 9px;
+    transform: rotate(-45deg);
   }
 }
 
@@ -94,10 +128,19 @@ header {
   padding: 1.481vw 0 0;
   text-align: center;
   line-height: 1.5;
+
+  @include mobile {
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 0;
+  }
 }
 
 .header-nav__link {
   font-size: 0.93vw;
+  @include mobile {
+    font-size: 13px;
+  }
 }
 
 .nav-en {
@@ -113,4 +156,31 @@ header {
   border-radius: 2.963vw;
   display: block;
   background: linear-gradient(90deg, #e3eeff, #f3e7e9);
+
+  @include mobile {
+    padding: 12px 45px;
+    font-size: 15px;
+    border-radius: 40px;
+    font-weight: bold;
+    transition: all 0.3s;
+  }
+}
+
+.header-nav {
+  @include mobile {
+    list-style: none;
+    width: 90%;
+    margin: 0px auto 0;
+    overflow: auto;
+    height: auto;
+  }
+}
+
+#global-nav.open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.scroll-fix {
+  overflow: hidden;
 }
